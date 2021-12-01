@@ -1,9 +1,12 @@
 import React from 'react';
 
-function About() {
+function About(props) {
+    console.log("about");
+    console.log(props);
+    let state = props.location.state;
     return (
         <div>
-            <span> Test asdfasdfasdfasfasd</span>
+            <span> {state.summary}</span>
         </div>
     )
 }
